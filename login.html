@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>NoName Login</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+  <!-- login-header -->
+  <div class="-login-header">
+    <!-- <h1 class="logo"></h1> -->
+    <div class="boxlogo">NoName</div>
+  </div>
+  <!-- login-main -->
+  <div class="-login-main">
+    <div class="wrapper">
+      <form action="" autocomplete="off">
+        <div class="box">
+          <div class="tab-nav">
+            <a href="javascript:;" class="active" data-id="0">Login</a>
+            <a href="javascript:;" data-id="1">QR code Login</a>
+          </div>
+          <div class="tab-pane">
+            <div class="link">
+              <a href="javascript:;">Login with Message</a>
+            </div>
+            <div class="input">
+              <span class="iconfont icon-zhanghao"></span>
+              <input required type="text" placeholder="Email or phone number" name="username">
+            </div>
+            <div class="input">
+              <span class="iconfont icon-suo"></span>
+              <input required type="password" placeholder="password" name="password">
+            </div>
+            <div class="agree">
+              <label for="my-checkbox">
+                <input type="checkbox" value="1" id="my-checkbox" class="remember" name="agree">
+                <span class="iconfont icon-xuanze"></span>
+              </label>
+              Agree to <a href="javascript:;"> Terms, Privacy Policy</a href="javascript:;"> and <a> Cookies Policy</a>
+            </div>
+            <div class="button clearfix">
+              <button type="submit" class="dl">Log In</button>
+              <a class="fl" href="./forget.html">Forgot password?</a>
+              <a class="fr" href="./register.html">Sign Up</a>
+            </div>
+          </div>
+          <div class="tab-pane" style="display: none;">
+            <img class="code" src="./images/code.jpg" alt="">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- login-footer -->
+  <div class="-login-footer">
+    <!-- copyright -->
+    <div class="copyright">
+      <p>
+        <a href="javascript:;">Service</a>
+        <a href="javascript:;">Service</a>
+        <a href="javascript:;">Service</a>
+        <a href="javascript:;">Service</a>
+        <a href="javascript:;">Service</a>
+        <a href="javascript:;">Service</a>
+        <a href="javascript:;">Service</a>
+      </p>
+      <p>CopyRight &copy; NoName</p>
+    </div>
+  </div>
+  <script>
+    const tab_nav = document.querySelector('.tab-nav')
+    const pane = document.querySelectorAll('.tab-pane')
+
+    tab_nav.addEventListener('click', function (e) {
+      if (e.target.tagName === "A") {
+        tab_nav.querySelector('.active').classList.remove('active')
+        e.target.classList.add('active')
+        console.log(pane);
+        for (let i = 0; i < pane.length; i++) {
+          console.log(pane[i].style.display);
+          pane[i].style.display = 'none'
+        }
+        pane[e.target.dataset.id].style.display = 'block'
+      }
+    })
+
+    const form = document.querySelector('form')
+    const agree = document.querySelector('[name=agree]')
+    const username = document.querySelector('[name=username]')
+    form.addEventListener('submit', function (e) {
+      e.preventDefault()
+      if (!agree.checked) {
+        return alert('click the agreement')
+      }
+      localStorage.setItem('-uname', username.value)
+      location.href = './index.html'
+    })
+  </script>
+</body>
+
+</html>

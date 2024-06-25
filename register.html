@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>NoName Sign Up</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/register.css">
+  <link rel="stylesheet" href="https://at.alicdn.com/t/font_2143783_iq6z4ey5vu.css">
+</head>
+
+<body>
+  <!-- topnav -->
+  <div class="_topnav">
+    <div class="wrapper">
+      <!-- Top navs -->
+      <ul class="_navs">
+        <li>
+          <a href="./login.html">Login</a>
+        </li>
+        <li>
+          <a href="./register.html">Register</a>
+        </li>
+        <li>
+          <a href="./center-order.html"> Orders</a>
+        </li>
+        <li>
+          <a href="./center.html">Account & Lists</a>
+        </li>
+        <a href="javascript:;">
+          <i class="mobile sprites"></i>
+          mobile
+        </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- header -->
+  <div class="_header">
+    <div class="wrapper">
+      <!-- Web Logo -->
+      <h1 class="_logo"><a href="/">NoName</a></h1>
+      <!-- navs -->
+      <div class="_navs">
+        <ul class="clearfix">
+          <li>
+            <a href="./index.html">All</a>
+          </li>
+          <li>
+            <a href="./category01.html">On Sale</a>
+          </li>
+          <li>
+            <a href="./category01.html">Buy Again</a>
+          </li>
+          <li>
+            <a href="./category01.html">Best Sellers</a>
+          </li>
+          <li>
+            <a href="./category01.html">Home</a>
+          </li>
+          <li>
+            <a href="./category01.html">New Releases</a>
+          </li>
+        </ul>
+      </div>
+      <!-- search -->
+      <div class="_search clearfix">
+        <!-- cart -->
+        <a href="./cart-none.html" class="_search_cart sprites">
+          <i>2</i>
+        </a>
+        <!-- search -->
+        <div class="_search_wrapper">
+          <input type="text" placeholder="Search" onclick="location.href='./search.html'">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="-wrapper">
+    <div class="container">
+      <!-- card -->
+      <div class="-card">
+        <h3>Sign up</h3>
+        <form class="-form">
+          <div data-prop="username" class="-form-item">
+            <span class="iconfont icon-zhanghao"></span>
+            <input name="username" type="text" placeholder="Username">
+            <span class="msg"></span>
+          </div>
+          <div data-prop="phone" class="-form-item">
+            <span class="iconfont icon-shouji"></span>
+            <input name="phone" type="text" placeholder="Phone number  ">
+            <span class="msg"></span>
+          </div>
+          <div data-prop="code" class="-form-item">
+            <span class="iconfont icon-zhibiaozhushibiaozhu"></span>
+            <input name="code" type="text" placeholder="SMS passcode">
+            <span class="msg"></span>
+            <a class="code" href="javascript:;">Send</a>
+          </div>
+          <div data-prop="password" class="-form-item">
+            <span class="iconfont icon-suo"></span>
+            <input name="password" type="password" placeholder="6-20 letters, numbers and symbols">
+            <span class="msg"></span>
+          </div>
+          <div data-prop="confirm" class="-form-item">
+            <span class="iconfont icon-suo"></span>
+            <input name="confirm" type="password" placeholder="Repeat password">
+            <span class="msg"></span>
+          </div>
+          <div class="-form-item pl50">
+            <i class="iconfont icon-queren"></i>
+            Agree to<i> Terms, Privacy Policy and Cookies Policy</i>
+          </div>
+          <div class="-form-item">
+            <button class="submit">Next Step</button>
+            <!-- <a class="submit" href="javascript:;">Next Step</a> -->
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Bottow -->
+  <div class="_footer clearfix">
+    <div class="wrapper">
+      <!-- Service -->
+      <div class="contact clearfix">
+        <dl>
+          <dt>Service</dt>
+          <dd class="chat">Service</dd>
+          <dd class="feedback">Service</dd>
+        </dl>
+        <dl>
+          <dt>Service</dt>
+          <dd class="chat">Service</dd>
+          <dd class="feedback">Service</dd>
+        </dl>
+        <dl>
+          <dt>Service</dt>
+          <dd class="chat">Service</dd>
+          <dd class="feedback">Service</dd>
+        </dl>
+        </dl>
+        <dl>
+          <dt>Service</dt>
+          <dd class="hotline">
+            xxx-xxx-xxxx
+            <small>Mon - Fri 8:00-18:00</small>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <!-- other -->
+    <div class="extra">
+      <div class="wrapper">
+        <!-- Description -->
+        <div class="slogan">
+          <a href="javascript:;" class="price">Description</a>
+          <a href="javascript:;" class="express">Description</a>
+          <a href="javascript:;" class="quality">Description</a>
+        </div>
+        <!-- copyright -->
+        <div class="copyright">
+          <p>
+            <a href="javascript:;">Service</a>
+            <a href="javascript:;">Service</a>
+            <a href="javascript:;">Service</a>
+            <a href="javascript:;">Service</a>
+            <a href="javascript:;">Service</a>
+            <a href="javascript:;">Service</a>
+            <a href="javascript:;">Service</a>
+          </p>
+          <p>CopyRight &copy; NoName</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const code = document.querySelector('.code')
+    let flag = true
+    code.addEventListener('click', function () {
+      if (flag) {
+        flag = false
+        let i = 5
+        code.innerHTML = `0${i}s later to retry`
+        const timeId = setInterval(function () {
+          i--
+          code.innerHTML = `${i}s later to retry`
+          if (i === 0) {
+            clearInterval(timeId)
+            code.innerHTML = 'retry'
+            flag = true
+          }
+        }, 1000)
+      }
+    })
+
+    const username = document.querySelector('[name=username]')
+    username.addEventListener('change', NameVerifier)
+    function NameVerifier() {
+      const span = username.nextElementSibling
+      const reg = /^[a-zA-Z0-9-_]{6,10}$/
+      if (!reg.test(username.value)) {
+        span.innerText = 'invalid input'
+        return false
+      }
+
+      span.innerText = ''
+      return true
+    }
+
+
+
+    const phone = document.querySelector('[name=phone]')
+    phone.addEventListener('change', phoneVerifier)
+    function phoneVerifier() {
+      const span = phone.nextElementSibling
+      const reg = /^1(3\d|4[5-9]|5[0-35-9]|6[567]|7[0-8]|8\d|9[0-35-9])\d{8}$/
+      if (!reg.test(phone.value)) {
+        span.innerText = 'invalid phone number'
+        return false
+      }
+      span.innerText = ''
+      return true
+    }
+
+
+
+
+    const passcode = document.querySelector('[name=code]')
+    passcode.addEventListener('change', passcodeVerifier)
+    function passcodeVerifier() {
+      const span = passcode.nextElementSibling
+      const reg = /^\d{6}$/
+      if (!reg.test(passcode.value)) {
+        span.innerText = 'invalid passcode number'
+        return false
+      }
+      span.innerText = ''
+      return true
+    }
+
+
+
+    const password = document.querySelector('[name=password]')
+    password.addEventListener('change', pwdVerifier)
+    function pwdVerifier() {
+      const span = password.nextElementSibling
+      const reg = /^[a-zA-Z0-9- ]{6,20}$/
+      if (!reg.test(password.value)) {
+        span.innerText = 'invalid password'
+        return false
+      }
+      span.innerText = ''
+      return true
+    }
+
+
+
+    const confirm = document.querySelector('[name=confirm]')
+    confirm.addEventListener('change', confirmationVerifier)
+    function confirmationVerifier() {
+      const span = confirm.nextElementSibling
+
+      if (confirm.value !== password.value) {
+        span.innerText = 'inconsistent with the password above'
+        return false
+      }
+      span.innerText = ''
+      return true
+    }
+
+
+    // disclaimer
+    const disclaimer = document.querySelector('.icon-queren')
+    // console.log(disclaimer);
+    disclaimer.addEventListener('click', function () {
+      this.classList.toggle('icon-queren2')
+    })
+
+    const form = document.querySelector('form')
+    form.addEventListener('submit', function (e) {
+      // disclaimer.contains('icon-queren2')
+      console.log(disclaimer.classList.contains('icon-queren2'));
+      if (!disclaimer.classList.contains('icon-queren2')) {
+        alert('Please sign the disclaimer')
+        e.preventDefault()
+      }
+      if (!NameVerifier()) e.preventDefault()
+      if (!phoneVerifier()) e.preventDefault()
+      if (!passcodeVerifier()) e.preventDefault()
+      if (!pwdVerifier()) e.preventDefault()
+      if (!confirmationVerifier()) e.preventDefault()
+
+
+
+    })
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>NoName</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="https://at.alicdn.com/t/font_2143783_iq6z4ey5vu.css">
+  <script>
+    //Check userAgent（Browser info）
+    !(function () {
+      const userAgent = navigator.userAgent
+      // Verify Android or iPhone
+      const android = userAgent.match(/(Android);?[\s\/]+([\d.]+)?/)
+      const iphone = userAgent.match(/(iPhone\sOS)\s([\d_]+)/)
+
+      // Jump to mobile site, if device is Android or iPhone
+      if (android || iphone) {
+        location.href = 'https://www.google.com'
+      }
+
+    })()
+  </script>
+</head>
+
+<body>
+  <!-- Top Nav -->
+  <div class="_topnav">
+    <div class="wrapper">
+      <!-- navs -->
+      <ul class="_navs">
+        <li>
+          <a href="./login.html">Login</a>
+        </li>
+        <li>
+          <a href="./register.html">Register</a>
+        </li>
+        <li>
+          <a href="./center-order.html"> Orders</a>
+        </li>
+        <li>
+          <a href="./center.html">Account & Lists</a>
+        </li>
+        <a href="javascript:;">
+          <i class="mobile sprites"></i>
+          mobile
+        </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- Header -->
+  <div class="_header">
+    <div class="wrapper">
+      <!-- Web Logo -->
+      <div class="boxlogo">NoName</div>
+      <!-- <h1 class="_logo"><a href="/">NoName</a></h1> -->
+      <!-- Main Nav -->
+      <div class="_navs">
+        <ul class="clearfix">
+          <li>
+            <a href="./index.html">All</a>
+          </li>
+          <li>
+            <a href="./category01.html">On Sale</a>
+          </li>
+          <li>
+            <a href="./category01.html">Buy Again</a>
+          </li>
+          <li>
+            <a href="./category01.html">Best Sellers</a>
+          </li>
+          <li>
+            <a href="./category01.html">Home</a>
+          </li>
+          <li>
+            <a href="./category01.html">New Releases</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Search -->
+      <div class="_search clearfix">
+        <!-- Shopping Cart -->
+        <a href="./cart-none.html" class="_search_cart sprites">
+          <i>2</i>
+        </a>
+        <!-- Search Bar -->
+        <div class="_search_wrapper">
+          <input type="text" placeholder="search" onclick="location.href='./search.html'">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Categories -->
+  <div class="_entry">
+    <div class="wrapper">
+      <div class="_category">
+        <!-- Main category -->
+        <ul class="_category_super">
+          <li>
+            <a href="javascript:;">
+              Category 1
+            </a>
+            <i class="sprites"></i>
+          </li>
+          <li class="active">
+            <a href="javascript:;">
+              Category 2
+            </a>
+            <i class="sprites"></i>
+          </li>
+          <li>
+            <a href="javascript:;">
+              Category 3
+            </a>
+            <i class="sprites"></i>
+          </li>
+          <li>
+            <a href="javascript:;">
+              Category 4
+            </a>
+            <i class="sprites"></i>
+          </li>
+          <li>
+            <a href="javascript:;">
+              Category 5
+            </a>
+            <i class="sprites"></i>
+          </li>
+          <li>
+            <a href="javascript:;">
+              Category 6
+            </a>
+            <i class="sprites"></i>
+          </li>
+          <li>
+            <a href="javascript:;">
+              Category 7
+            </a>
+            <i class="sprites"></i>
+          </li>
+          <li>
+            <a href="javascript:;">
+              Category 8
+            </a>
+            <i class="sprites"></i>
+          </li>
+          <li>
+            <a href="javascript:;">
+              Category 9
+            </a>
+            <i class="sprites"></i>
+          </li>
+          <li>
+            <a href="javascript:;">
+              Category 10
+            </a>
+            <i class="sprites"></i>
+          </li>
+        </ul>
+        <!-- Sub category -->
+        <div class="_category_subset">
+
+        </div>
+      </div>
+      <!-- banner -->
+      <div class="_banner">
+
+        <ul>
+          <li>
+            <a href="javascript:;">
+              <img src="./uploads/banner.png" alt="">
+            </a>
+          </li>
+        </ul>
+        <!-- Switch Button  -->
+        <a href="javascript:;" class="prev sprites"></a>
+        <a href="javascript:;" class="next sprites"></a>
+        <!-- Indicator -->
+        <div class="indicator">
+          <span></span>
+          <span></span>
+          <span class="active"></span>
+          <span></span>
+          <span></span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Section1 -->
+  <div class="_goods_new _panel">
+    <div class="wrapper">
+      <!-- header -->
+      <div class="_panel_header">
+        <h3>Section<small>Description</small></h3>
+        <a href="./index-new.html" class="more">
+          View All<i class="sprites"></i>
+        </a>
+      </div>
+      <!-- Item list -->
+      <div class="_panel_goods_1">
+        <a href="javascript:;">
+          <img src="./uploads/new_goods_1.jpg" alt="">
+          <span class="name">Item</span>
+          <span class="price"><small>$</small>xxx.xx</span>
+        </a>
+        <a href="javascript:;">
+          <img src="./uploads/new_goods_1.jpg" alt="">
+          <span class="name">Item</span>
+          <span class="price"><small>$</small>xxx.xx</span>
+        </a>
+        <a href="javascript:;">
+          <img src="./uploads/new_goods_1.jpg" alt="">
+          <span class="name">Item</span>
+          <span class="price"><small>$</small>xxx.xx</span>
+        </a>
+        <a href="javascript:;">
+          <img src="./uploads/new_goods_1.jpg" alt="">
+          <span class="name">Item</span>
+          <span class="price"><small>$</small>xxx.xx</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Section2 -->
+  <div class="_goods_popular _panel">
+    <div class="wrapper">
+      <!-- header -->
+      <div class="_panel_header">
+        <h3>Section<small>Description</small></h3>
+      </div>
+      <!-- Item list -->
+      <div class="_panel_goods_1">
+        <a href="javascript:;">
+          <img src="./uploads/popular_1.jpg">
+          <span class="title">Sub-section</span>
+          <span class="alt">Description</span>
+        </a>
+        <a href="./index-hot.html">
+          <img src="./uploads/popular_1.jpg">
+          <span class="title">Sub-section</span>
+          <span class="alt">Description</span>
+        </a>
+        <a href="./index-one.html">
+          <img src="./uploads/popular_1.jpg">
+          <span class="title">Sub-section</span>
+          <span class="alt">Description</span>
+        </a>
+        <a href="javascript:;">
+          <img src="./uploads/popular_1.jpg">
+          <span class="title">Sub-section</span>
+          <span class="alt">Description</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Section3 -->
+  <div class="_goods_brand _panel">
+    <div class="wrapper">
+      <div class="_panel_header">
+        <h3>Section<small>Description</small></h3>
+        <div class="page-bar">
+          <a href="javascript:;" class="prev sprites"></a>
+          <a href="javascript:;" class="next sprites active"></a>
+        </div>
+      </div>
+      <!-- Item list -->
+      <div class="_goods">
+        <ul>
+          <li>
+            <a href="./index-brand.html">
+              <img src="./uploads/brand_goods_2.png" alt="">
+            </a>
+            <a href="./brand-list.html">
+              <img src="./uploads/brand_goods_2.png" alt="">
+            </a>
+            <a href="javascript:;">
+              <img src="./uploads/brand_goods_2.png" alt="">
+            </a>
+            <a href="javascript:;">
+              <img src="./uploads/brand_goods_2.png" alt="">
+            </a>
+            <a href="javascript:;">
+              <img src="./uploads/brand_goods_2.png" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Section4 -->
+  <div class="_goods_category _panel">
+    <div class="wrapper">
+      <!-- header -->
+      <div class="_panel_header">
+        <h3>Section</h3>
+        <a href="javascript:;" class="more">
+          View All<i class="sprites"></i>
+        </a>
+        <div class="tabs-bar">
+          <a href="javascript:;" class="active">Category</a>
+          <a href="javascript:;">Category</a>
+          <a href="javascript:;">Category</a>
+          <a href="javascript:;">Category</a>
+          <a href="javascript:;">Category</a>
+          <a href="javascript:;">Category</a>
+        </div>
+      </div>
+      <!-- Item list -->
+      <div class="_panel_goods_2">
+        <ul class="clearfix">
+          <li>
+            <a href="javascript:;">
+              <div class="box1"></div>
+            </a>
+          </li>
+          <li>
+            <!-- Item Pics -->
+            <a href="javascript:;">
+              <div class="img-box">
+                <img src="./uploads/fresh_goods_7.jpg" alt="">
+              </div>
+            </a>
+            <!-- Item Description -->
+            <div class="meta">
+              <p class="name">Item Description</p>
+              <p class="flag">Classification</p>
+              <p class="price"><small>$</small>xxx.xx</p>
+            </div>
+            <!-- Other -->
+            <div class="extra">
+              <a href="javascript:;">
+                <span>Add to Cart</span>
+                <span>Explore more&gt;</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <div class="img-box">
+                <img src="./uploads/fresh_goods_7.jpg" alt="">
+              </div>
+            </a>
+            <div class="meta">
+              <p class="name">Item Description</p>
+              <p class="flag">Classification</p>
+              <p class="price"><small>$</small>xxx.xx.9</p>
+            </div>
+            <!-- Other -->
+            <div class="extra">
+              <a href="javascript:;">
+                <span>Add to Cart</span>
+                <span>Explore more&gt;</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <div class="img-box">
+                <img src="./uploads/fresh_goods_7.jpg" alt="">
+              </div>
+            </a>
+            <div class="meta">
+              <p class="name">Item Description</p>
+              <p class="flag">Classification</p>
+              <p class="price"><small>$</small>xxx.xx</p>
+            </div>
+            <!-- Other -->
+            <div class="extra">
+              <a href="javascript:;">
+                <span>Add to Cart</span>
+                <span>Explore more&gt;</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <div class="img-box">
+                <img src="./uploads/fresh_goods_7.jpg" alt="">
+              </div>
+            </a>
+            <div class="meta">
+              <p class="name">Item Description</p>
+              <p class="flag">Classification</p>
+              <p class="price"><small>$</small>xxx.xx</p>
+            </div>
+            <!-- Other -->
+            <div class="extra">
+              <a href="javascript:;">
+                <span>Add to Cart</span>
+                <span>Explore more&gt;</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <div class="img-box">
+                <img src="./uploads/fresh_goods_7.jpg" alt="">
+              </div>
+            </a>
+            <div class="meta">
+              <p class="name">Item Description</p>
+              <p class="flag">Classification</p>
+              <p class="price"><small>$</small>xxx.xx</p>
+            </div>
+            <!-- Other -->
+            <div class="extra">
+              <a href="javascript:;">
+                <span>Add to Cart</span>
+                <span>Explore more&gt;</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <div class="img-box">
+                <img src="./uploads/fresh_goods_7.jpg" alt="">
+              </div>
+            </a>
+            <div class="meta">
+              <p class="name">Item Description</p>
+              <p class="flag">Classification</p>
+              <p class="price"><small>$</small>xxx.xx</p>
+            </div>
+            <!-- Other -->
+            <div class="extra">
+              <a href="javascript:;">
+                <span>Add to Cart</span>
+                <span>Explore more&gt;</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <div class="img-box">
+                <img src="./uploads/fresh_goods_7.jpg" alt="">
+              </div>
+            </a>
+            <div class="meta">
+              <p class="name">Item Description</p>
+              <p class="flag">Classification</p>
+              <p class="price"><small>$</small>xxx.xx</p>
+            </div>
+            <!-- Other -->
+            <div class="extra">
+              <a href="javascript:;">
+                <span>Add to Cart</span>
+                <span>Explore more&gt;</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <div class="img-box">
+                <img src="./uploads/fresh_goods_7.jpg" alt="">
+              </div>
+            </a>
+            <div class="meta">
+              <p class="name">Item Description </p>
+              <p class="flag">Classification</p>
+              <p class="price"><small>$</small>xxx.xx</p>
+            </div>
+            <!-- Other -->
+            <div class="extra">
+              <a href="javascript:;">
+                <span>Add to Cart</span>
+                <span>Explore more&gt;</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+
+      <!-- Bottow -->
+      <div class="_footer clearfix">
+        <div class="wrapper">
+          <!-- Service -->
+          <div class="contact clearfix">
+            <dl>
+              <dt>Service</dt>
+              <dd class="chat">Service</dd>
+              <dd class="feedback">Service</dd>
+            </dl>
+            <dl>
+              <dt>Service</dt>
+              <dd class="chat">Service</dd>
+              <dd class="feedback">Service</dd>
+            </dl>
+            <dl>
+              <dt>Service</dt>
+              <dd class="chat">Service</dd>
+              <dd class="feedback">Service</dd>
+            </dl>
+            </dl>
+            <dl>
+              <dt>Service</dt>
+              <dd class="hotline">
+                xxx-xxx-xxxx
+                <small>Mon - Fri 8:00-18:00</small>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <!-- other -->
+        <div class="extra">
+          <div class="wrapper">
+            <!-- Description -->
+            <div class="slogan">
+              <a href="javascript:;" class="price">Description</a>
+              <a href="javascript:;" class="express">Description</a>
+              <a href="javascript:;" class="quality">Description</a>
+            </div>
+            <!-- copyright -->
+            <div class="copyright">
+              <p>
+                <a href="javascript:;">Service</a>
+                <a href="javascript:;">Service</a>
+                <a href="javascript:;">Service</a>
+                <a href="javascript:;">Service</a>
+                <a href="javascript:;">Service</a>
+                <a href="javascript:;">Service</a>
+                <a href="javascript:;">Service</a>
+              </p>
+              <p>CopyRight &copy; NoName</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        const li1 = document.querySelector('._topnav li:first-child')
+        const li2 = li1.nextElementSibling
+
+        function reder() {
+          const uname = localStorage.getItem('-uname')
+          if (uname) {
+            li1.innerHTML = `<a href="javascipy:;"><i class="iconfont icon-user"> ${uname}<xxx.xxi></a>`
+            li2.innerHTML = `<a href="javascript:;">Logout</a>`
+          } else {
+            li1.innerHTML = `<a href="./login.html"><i class="iconfont icon-user">Please Login</i></a>`
+            li2.innerHTML = `<a href="./register.html">Free Register</a>`
+          }
+        }
+        reder()
+
+
+        li2.addEventListener('click', function () {
+          localStorage.removeItem('-uname')
+          reder()
+        })
+
+      </script>
+</body>
+
+</html>
